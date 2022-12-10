@@ -9,6 +9,7 @@ Geo-tags can be used to determine the tracking and logging of transportation of 
 Understanding problem
 
 Improving the tracking and logging of the location of high-value goods has become a vital concern in today's supply-chain systems. during the transportation of high value goods there is often a chance of tampering, counterfeiting or robbery. In order to tackle these issue we propose the use of block chain technology to create immutable records of every transaction, exchange and live location of the product.
+
 Thus to secure and recover these assets, we employ  blockchain. We use Communication in a GPS-enabled asset tracking system : a GPS device that can communicate with NFC. 
 We  attach a high-grade GPS tracker to a  delivery vehicle or the location or the piece is stored. Products inside are equipped with an NFC chip each that communicates with the GPS. The GPS sends data about each product from their NFC chips to the blockchain platform.
 
