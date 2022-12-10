@@ -6,7 +6,7 @@ Geo-tags can be used to determine the tracking and logging of transportation of 
 
 
 
-Understanding problem
+#Understanding problem
 
 Improving the tracking and logging of the location of high-value goods has become a vital concern in today's supply-chain systems. during the transportation of high value goods there is often a chance of tampering, counterfeiting or robbery. In order to tackle these issue we propose the use of block chain technology to create immutable records of every transaction, exchange and live location of the product.
 
@@ -15,7 +15,7 @@ We  attach a high-grade GPS tracker to a  delivery vehicle or the location or th
 
 
 
-Problem functions implemented:
+#Problem functions implemented:
 
 generate_New_Parcel_ID() : 
  as our application requires us to assign a unique id to every package we generate new parcel id.
