@@ -1,45 +1,36 @@
-# blockchain_tracker
+# Blockchain Tracker
+
+This repository implements a blockchain-based tracking system for monitoring the location and status of high-value goods during transportation. By leveraging blockchain technology, the system aims to provide transparency, security, and immutability to the tracking process, thereby reducing the risks associated with tampering, counterfeiting, and theft.
+
+## Problem Statement
+
+In today's supply chain systems, the need for improved tracking and logging of high-value goods has become increasingly crucial. During transportation, these goods are susceptible to tampering, counterfeiting, and robbery, posing significant challenges for logistics and security. To address these issues, the project proposes the use of blockchain technology to create immutable records of every transaction, exchange, and live location of the products.
+
+## Solution
+
+The proposed solution employs a GPS-enabled asset tracking system integrated with blockchain technology. Each high-value item is equipped with an NFC chip that communicates with a GPS device attached to the delivery vehicle or storage location. The GPS device sends data about each product's location and status to the blockchain platform, ensuring secure and transparent tracking throughout the supply chain.
+
+## Key Functions Implemented
+
+1. **generate_New_Parcel_ID()**: Assigns a unique ID to every package to facilitate tracking and logging.
+
+2. **parcel_departed()**: Updates the blockchain with information indicating that the package has left a particular endpoint.
+
+3. **change_Location()**: Allows authorized users to manually update the location of the package on the blockchain and send alerts about location changes.
+
+4. **parcel_hand_over()**: Tracks the handover of parcels between entities and updates the blockchain with relevant information, ensuring reliable and verifiable exchanges.
+
+5. **update_StatusAsDelivered()**: Updates the status of the parcel once it has been delivered to the endpoint, triggering notifications to users.
+
+6. **addState()**: Updates the status of the package in transit from start to endpoint, providing a comprehensive view of its journey.
+
+7. **searchProduct()**: Retrieves detailed information about a product and its transit location based on user demand.
+
+8. **set_hash_for_parcel()**: Implements an anti-counterfeit solution by generating a QR code with a hash stored on the blockchain. Any tampering or counterfeiting attempts will trigger alerts due to changes in the QR code hash.
 
 
-Blockchain technology offers some benefits over Traditional Centralized GPS. It provides higher levels of transparency, is less likely to be hacked, and enables faster data processing.  we log the data provided throught gps asset tracking system on blockchain. The data is transmitted via AES- 256 encryption standard.
-Geo-tags can be used to determine the tracking and logging of transportation of high-value materials like minerals, parcels, luggage, containers, fuels, money transported from bank to bank, etc. 
+## Future Enhancements
 
-
-
-# Understanding problem
-
-Improving the tracking and logging of the location of high-value goods has become a vital concern in today's supply-chain systems. during the transportation of high value goods there is often a chance of tampering, counterfeiting or robbery. In order to tackle these issue we propose the use of block chain technology to create immutable records of every transaction, exchange and live location of the product.
-
-Thus to secure and recover these assets, we employ  blockchain. We use Communication in a GPS-enabled asset tracking system : a GPS device that can communicate with NFC. 
-We  attach a high-grade GPS tracker to a  delivery vehicle or the location or the piece is stored. Products inside are equipped with an NFC chip each that communicates with the GPS. The GPS sends data about each product from their NFC chips to the blockchain platform.
-
-
-
-# Problem functions implemented:
-
-generate_New_Parcel_ID() : 
- as our application requires us to assign a unique id to every package we generate new parcel id.
-
-parcel_departed ():  
-This function will update the blockchain with information that the package has left a particular end point.
-
-change_Location (): 
-If we want to update the location, we use this function. This can be used by authorized users to manually update the location of the package on blockchain as well as send an alert to the user about the goods change of location.
-
-parcel_hand_over(): 
-Reliable and verifiable hand-over of parcel is an integral part of the security of the parcel. The handover parcel keeps track of the previous location and delivery ( inward ) of the parcel and then update the blockchain when the parcel changes entities and completes an exchange at a warehouse or delivery agent etc. so we can keep track of who all handled the package.
-
-update_StatusAsDelivered ():
-it is necessary to update the status of the parcel once its delivered to the end point so a notification can be sent to user for succesful verification of delivery.
-
-addState() : 
-It will update the status of the package  in the transit process from start to end point. 
-Example : from manufacturer to distributor to retailer and finally consumer.
-
-searchProduct(): 
-It will provide the detail of Product and transit  location of co-ordinates as per the user demand.
-
-set_hash_for_parcel ():
-As we mentioned about anti-counterfeit solution. a QR code will be generated by the owner for the package whose hash will be stored on the blockchain. The QR code will provide information of the package. Any attempt of tampering of package or counterfeiting of package will change the hash of QR code and will Alert the user.
-
-
+1. Integration with IoT devices for real-time monitoring of environmental conditions such as temperature, humidity, and shock during transit.
+2. Implementation of smart contracts to automate and secure transactions between parties involved in the supply chain.
+3. Integration with data analytics tools to gain insights into supply chain performance and identify areas for optimization.
